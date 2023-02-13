@@ -3,7 +3,7 @@ from flask_mail import Mail, Message
 from config import email,senha
 
 app = Flask(__name__)
-app.secret_key = 'Erick@12052008'
+app.secret_key = 'Erick@1205'
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
