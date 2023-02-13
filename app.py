@@ -3,7 +3,7 @@ from flask_mail import Mail, Message
 from config import email,senha
 
 app = Flask(__name__)
-app.secret_key = 'erick1205'
+app.secret_key = 'Erick@12052008'
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
@@ -20,8 +20,8 @@ mail = Mail(app)
 
 class Contato:
     def __init__(self, nome, email, mensagem):
-        self.nome = nome,
-        self.email = email,
+        self.nome = nome
+        self.email = email
         self.mensagem = mensagem
 
 @app.route('/') #para a url não ter nada depois do /
@@ -38,8 +38,8 @@ def send():
         )
 
         msg = Message(
-            subject = f'{formContato.nome} te enviou uma mensagem no portfólio'
-            sender = app.config.get("MAIL_USERNAME")
+            subject = f'{formContato.nome} te enviou uma mensagem no portfólio',
+            sender = app.config.get("MAIL_USERNAME"),
             recipients= ['marcks@gmail.com', app.config.get("MAIL_USERNAME")],
             body = f'''
             
