@@ -83,7 +83,7 @@ html, body{
 }
 
 section#inicio {
-    background-image: url("./img/bannerPortifolio.png");
+    background-image: url("./img/bannerPortifolio.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
