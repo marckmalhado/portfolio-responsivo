@@ -45,3 +45,20 @@ animeScroll();
 window.addEventListener("scroll", ()=>{
     animeScroll();
 })*/
+
+
+// Ativar carragamento no botão de enviar
+
+const btnEnviar = document.querySelector("#btn-enviar")
+const btnEnviarLoader = document.querySelector("#btn-enviar-loader")
+
+btnEnviar.addEventListener("click", ()=>{
+    btnEnviarLoader.style.display = "block";
+    btnEnviar.style.display = "none"
+})
+
+//tira msg em 5 segundos
+
+setTimeout(() => {
+    document.querySelector('#alerta').style.display = 'none';
+}, 5000)

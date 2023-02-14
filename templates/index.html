@@ -1,512 +1,929 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../static/style.css">
-    <link rel="icon" type="image/png" href="../static/img/asset-15.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="icon" type="image/png" href="../static/img/asset-15.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <title>MK8 Tech</title>
-</head>
-<body>
+  </head>
+  <body>
     <i class="bi bi-list menu-mobile"></i>
-    <aside id='header'> 
-        <section class="profile">
-            <img src="../static/img/perfil.png" alt="Foto do Marck">
-            <h1>Marck Malhado</h1>
-            <div class="social-links mt-4 text-center">
-                <a target="_blank" href="https://github.com/marckmalhado">
-                    <i class="bi bi-github"></i>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/marckmalhado/">
-                    <i class="bi bi-linkedin"></i>
-                </a>
-                <a target="_blank" href="https://twitter.com/MarckMalhado">
-                    <i class="bi bi-twitter"></i>
-                </a>
-                <a target="_blank" href="https://www.instagram.com/marckmalhado/">
-                    <i class="bi bi-instagram"></i>
-                </a>
-            </div>
-        </section>
-        <nav id="navbar" class="nav-menu">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#inicio"><i class="bi bi-house" aria-hidden="true"></i> Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#sobre"><i class="bi bi-person" aria-hidden="true"></i> Sobre</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#habilidades"><i class="bi bi-list-check" aria-hidden="true"></i> Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#curriculo"><i class="bi bi-file-earmark-check" aria-hidden="true"></i> Currículo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#portfolio"><i class="bi bi-collection" aria-hidden="true"></i> Portfólio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#contato"><i class="bi bi-envelope-at" aria-hidden="true"></i> Contato</a>
-                  </li>
-              </ul>
-
-        </nav>
+    <aside id="header">
+      <section class="profile">
+        <img src="../static/img/perfil.png" alt="Foto do Marck" />
+        <h1>Marck Malhado</h1>
+        <div class="social-links mt-4 text-center">
+          <a target="_blank" href="https://github.com/marckmalhado">
+            <i class="bi bi-github"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/marckmalhado/">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/MarckMalhado">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a target="_blank" href="https://www.instagram.com/marckmalhado/">
+            <i class="bi bi-instagram"></i>
+          </a>
+        </div>
+      </section>
+      <nav id="navbar" class="nav-menu">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#inicio">
+              <i class="bi bi-house" aria-hidden="true"></i>
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">
+              <i class="bi bi-person" aria-hidden="true"></i>
+              Sobre
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">
+              <i class="bi bi-list-check" aria-hidden="true"></i>
+              Habilidades
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#curriculo">
+              <i class="bi bi-file-earmark-check" aria-hidden="true"></i>
+              Currículo
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">
+              <i class="bi bi-collection" aria-hidden="true"></i>
+              Portfólio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">
+              <i class="bi bi-envelope-at" aria-hidden="true"></i>
+              Contato
+            </a>
+          </li>
+        </ul>
+      </nav>
     </aside>
 
     <main id="main">
-        <section id="inicio" class="row m-0 p-0">
-            <div class="col-md-5 d-flex justify-content-center align-content-center flex-column">
-                <h2 class="text-white text-shadow">Marck Malhado</h2>
-                <span id="subtitle" class="text-white text-shadow">Gestor de TI, Data Scientist e Full-Stack Developer</span>
-            </div>
-            <div class="col-md-7 d-flex justify-content-end align-items-end">
-                <div id="arraste" class="d-flex align align-items-center">
-                <i class="bi bi-arrow-down text-white pe-2 fs-2"
-                aria-hidden="true"></i>
-                <a href="#sobre">Arraste para mais</a></div>
-            </div>
-        </section>
+      <section id="inicio" class="row m-0 p-0">
+        <div
+          class="col-md-5 d-flex justify-content-center align-content-center flex-column"
+        >
+          <h2 class="text-white text-shadow">Marck Malhado</h2>
+          <span id="subtitle" class="text-white text-shadow">
+            Gestor de TI, Data Scientist e Full-Stack Developer
+          </span>
+        </div>
+        <div class="col-md-7 d-flex justify-content-end align-items-end">
+          <div id="arraste" class="d-flex align align-items-center">
+            <i
+              class="bi bi-arrow-down text-white pe-2 fs-2"
+              aria-hidden="true"
+            ></i>
+            <a href="#sobre">Arraste para mais</a>
+          </div>
+        </div>
+      </section>
 
-        <section id="sobre" class="container mt-5">
-            <div class="row w-100">
-                <div class="col-md-12" data-anime="down">
-                    <h2 class="pt-3">Sobre</h2>
-                    <p>Olá, meu nome é Marck Malhado de Souza e sou profissional na área de tecnologia, com especialização em Data Science e Full Stack Development.
+      <section id="sobre" class="container mt-5">
+        <div class="row w-100">
+          <div class="col-md-12" data-anime="down">
+            <h2 class="pt-3">Sobre</h2>
+            <p>
+              Olá, meu nome é Marck Malhado de Souza e sou profissional na área
+              de tecnologia, com especialização em Data Science e Full Stack
+              Development. Como Data Scientist, tenho experiência em coleta,
+              análise e interpretação de dados, utilizando técnicas de
+              aprendizado de máquina e estatística para solucionar problemas
+              reais. Além disso, sou habilidoso em visualização de dados e
+              apresentação de insights em forma de relatórios e dashboards. Como
+              Full Stack Developer, possuo conhecimento em desenvolvimento de
+              aplicações web, desde o back-end até a interface do usuário. Tenho
+              experiência com as tecnologias mais atualizadas do mercado,
+              incluindo JavaScript, Python, HTML, CSS, e React. Estou sempre
+              buscando aprender e aprimorar minhas habilidades, a fim de
+              fornecer soluções inovadoras e de alta qualidade para os meus
+              clientes. Se você precisar de alguém com minhas competências, não
+              hesite em entrar em contato!
+            </p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <img
+              class="img-fluid shadow"
+              src="../static/img/perfil.png"
+              alt="Foto do Marck"
+              data-anime="left"
+            />
+          </div>
+          <div class="col-md-8" data-anime="rigth">
+            <h3>Data Scientist e Full-Stack Developer</h3>
+            <p>
+              Atualmente atuo como desenvolvedor web fullstack na MK8 Tech
+              trabalhando principalmente com JavaScript no front-end e no
+              back-end, utilizando bancos de dados SQL e noSQL.
+            </p>
 
-                        Como Data Scientist, tenho experiência em coleta, análise e interpretação de dados, utilizando técnicas de aprendizado de máquina e estatística para solucionar problemas reais. Além disso, sou habilidoso em visualização de dados e apresentação de insights em forma de relatórios e dashboards.
-                        
-                        Como Full Stack Developer, possuo conhecimento em desenvolvimento de aplicações web, desde o back-end até a interface do usuário. Tenho experiência com as tecnologias mais atualizadas do mercado, incluindo JavaScript, Python, HTML, CSS, e React.
-                        
-                        Estou sempre buscando aprender e aprimorar minhas habilidades, a fim de fornecer soluções inovadoras e de alta qualidade para os meus clientes. Se você precisar de alguém com minhas competências, não hesite em entrar em contato!</p>
-                </div>
-
-            </div>
-            <div class="row mt-4">
-                <div class="col-md-4">
-                    <img class="img-fluid shadow" src="../static/img/perfil.png" alt="Foto do Marck" data-anime="left">
-                </div>
-                <div class="col-md-8" data-anime="rigth">
-                    <h3>Data Scientist e Full-Stack Developer</h3>
-                    <p>Atualmente atuo como desenvolvedor web fullstack na MK8 Tech
-                        trabalhando principalmente com JavaScript no front-end e no back-end, utilizando bancos de dados SQL e noSQL.
-                    </p>
-
-                    <div class="row mt-3 mb-3">
-                        <div class="col-md-6">
-                            <ul class="list-group list-group-flush fs-5">
-                                <li class="list-group-item">
-                                    Niver: <span class="fw-lighter">22 de Abril de 1972</span>
-                                </li>
-                                <li class="list-group-item">
-                                    Idade: <span class="fw-lighter">50 anos</span>
-                                </li>
-                                <li class="list-group-item">
-                                    Cidade: <span class="fw-lighter">Florianópolis</span>
-                                </li>
-                                <li class="list-group-item">
-                                    Estado: <span class="fw-lighter">Santa Catarina</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6">
-                            <ul class="list-group list-group-flush fs-5">
-                                <li class="list-group-item">
-                                    Hobby: <span class="fw-lighter">Jiu-jitsu</span>
-                                </li>
-                                <li class="list-group-item">
-                                    Site: <a href="https://mk8tech.netlify.app"
-                                        target="_blank"
-                                        class="fw-lighter text-decoration-none link-dark">mk8.tech
-                                    </a>
-                                </li>
-                                <li class="list-group-item">
-                                    Trabalho: <a href="https://mk8tech.netlify.app"
-                                        target="_blank"
-                                        class="fw-lighter text-decoration-none link-dark">MK8 Tech
-                                    </a>
-                                </li>
-                                <li class="list-group-item">
-                                    Experiência: <span class="fw-lighter">+25 anos</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                
-                    <p>Além do desenvolvimento fullstack e data science, eu gosto de colocar em prática meus conhecimentos de DevOps
-                        mantendo toda a minha estrutura de desenvolvimento na nuvem e estruturando meus projetos e de terceiros
-                        da melhor maneira, alta performance e disponibildade com o menor custo possível.
-                    </p>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section class="mt-5 section-bg" id="habilidades">
-            <div class="container pb-5">
-                <h2 class="pt-5">Habilidades</h2>
-                <p>Com mais de 25 anos de experiência em tecnologia, posso dizer que adquiri uma ampla gama de habilidades e conhecimentos na área. 
-                    Desde o início da minha carreira, sempre estive envolvido com a implantação e manutenção de sistemas informáticos, tendo trabalhado 
-                    com diversas plataformas e tecnologias. Além disso, tenho profundo conhecimento em redes de computadores, segurança da informação e 
-                    gerenciamento de projetos de tecnologia.</p>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="mt-3 mb-0">HTML</p>
-                            <div class="progress" role="progressbar"  data-anime="left" aria-label="Example with label" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar"  style="width: 75%">75%</div>
-                            </div>
-                            <p class="mt-3 mb-0">CSS</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 55%">55%</div>
-                            </div>
-                            <p class="mt-3 mb-0">JavaScript</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 55%">55%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Python</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 60%">60%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Git</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%">85%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Deploy</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%">85%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Flask</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 45%">45%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mt-3 mb-0">Bootstrap</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 55%">55%</div>
-                            </div>
-                            <p class="mt-3 mb-0">R</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 60%">60%</div>
-                            </div>
-                            <p class="mt-3 mb-0">SQL</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 65%">65%</div>
-                            </div>
-                            <p class="mt-3 mb-0">NoSQL</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 55%">55%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Power BI</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 50%">50%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Tableau</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 45%">45%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Wordpress</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%">85%</div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <hr class="w-50 me-auto ms-auto">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="mt-3 mb-0">Trabalho em equipe</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%">85%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Proatividade</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 90%">90%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Orientação a detalhes</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 80%">80%</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mt-3 mb-0">Comunicação</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 90%">90%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Emptia</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 85%">85%</div>
-                            </div>
-                            <p class="mt-3 mb-0">Comprometimento</p>
-                            <div class="progress" role="progressbar" data-anime="left" aria-label="Example with label" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 95%">95%</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row mt-3 mb-3">
+              <div class="col-md-6">
+                <ul class="list-group list-group-flush fs-5">
+                  <li class="list-group-item">
+                    Niver:
+                    <span class="fw-lighter">22 de Abril de 1972</span>
+                  </li>
+                  <li class="list-group-item">
+                    Idade:
+                    <span class="fw-lighter">50 anos</span>
+                  </li>
+                  <li class="list-group-item">
+                    Cidade:
+                    <span class="fw-lighter">Florianópolis</span>
+                  </li>
+                  <li class="list-group-item">
+                    Estado:
+                    <span class="fw-lighter">Santa Catarina</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-group list-group-flush fs-5">
+                  <li class="list-group-item">
+                    Hobby:
+                    <span class="fw-lighter">Jiu-jitsu</span>
+                  </li>
+                  <li class="list-group-item">
+                    Site:
+                    <a
+                      href="https://mk8tech.netlify.app"
+                      target="_blank"
+                      class="fw-lighter text-decoration-none link-dark"
+                    >
+                      mk8.tech
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    Trabalho:
+                    <a
+                      href="https://mk8tech.netlify.app"
+                      target="_blank"
+                      class="fw-lighter text-decoration-none link-dark"
+                    >
+                      MK8 Tech
+                    </a>
+                  </li>
+                  <li class="list-group-item">
+                    Experiência:
+                    <span class="fw-lighter">+25 anos</span>
+                  </li>
+                </ul>
+              </div>
             </div>
 
-        </section>
+            <p>
+              Além do desenvolvimento fullstack e data science, eu gosto de
+              colocar em prática meus conhecimentos de DevOps mantendo toda a
+              minha estrutura de desenvolvimento na nuvem e estruturando meus
+              projetos e de terceiros da melhor maneira, alta performance e
+              disponibildade com o menor custo possível.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section class="mt-5 cv" id="curriculo">
-            
-            <div class="container pb-5">
-                <h2 class="pt-3 pb-4">Currículo</h2>
+      <section class="mt-5 section-bg" id="habilidades">
+        <div class="container pb-5">
+          <h2 class="pt-5">Habilidades</h2>
+          <p>
+            Com mais de 25 anos de experiência em tecnologia, posso dizer que
+            adquiri uma ampla gama de habilidades e conhecimentos na área. Desde
+            o início da minha carreira, sempre estive envolvido com a
+            implantação e manutenção de sistemas informáticos, tendo trabalhado
+            com diversas plataformas e tecnologias. Além disso, tenho profundo
+            conhecimento em redes de computadores, segurança da informação e
+            gerenciamento de projetos de tecnologia.
+          </p>
 
-                <div class="row">
-                    <div class="col-md-6">
-
-                        <h3 class="cv-title">Educação</h3>
-
-                        <div class="cv-item" data-anime="up">
-                            <h4>Analise de Sistemas</h4>
-                            <h5>1991 - 1993</h5>
-                            <p><em>ACEI - Associação Catarinense de Ensino a Informática</em></p>
-                            <p>Tecnólogo em Análise de Sistemas, com carga horária de 1800 horas.
-                                Tecnólogo em Análise de Sistemas, com carga horária de 1800 horas
-                                Tecnólogo em Análise de Sistemas, com carga horária de 1800 horas
-                                Tecnólogo em Análise de Sistemas, com carga horária de 1800 horas
-                            </p>
-                        </div>
-                        <div class="cv-item" data-anime="up">
-                            <h4>CCNA</h4>
-                            <h5>2000 - 2003</h5>
-                            <p><em>Cisco Network Academy - SENAI</em></p>
-                            <p>Especialização em Administração de Redes, com carga horária de 850 horas.
-                                Especialização em Administração de Redes, com carga horária de 850 horas
-                                Especialização em Administração de Redes, com carga horária de 850 horas
-                            </p>
-                        </div>
-                        <div class="cv-item" data-anime="up">
-                            <h4>Gestão de Tecnologia da Informação</h4>
-                            <h5>2019 - 2022</h5>
-                            <p><em>UNICESUMAR - Gestão de TI</em></p>
-                            <p>Graduação em Gestão de Tecnologia da Informação, com foco em projetos e metodologias ágeis
-                                 com carga horária de 1800 horas. 
-                                 Graduação em Gestão de Tecnologia da Informação, com foco em projetos e metodologias ágeis
-                                 com carga horária de 1800 horas.</p>
-                        </div>
-                        
-                        <div class="cv-item" data-anime="up">
-                            <h4>Data Science</h4>
-                            <h5>2022 - atual</h5>
-                            <p><em>Anhanguera - Pós-graduação</em></p>
-                            <p>Pós-Graduação em Business intelligence, Big Data e Analytics - Ciência de Dados
-                                Pós-Graduação em Business intelligence, Big Data e Analytics - Ciência de Dados
-                                Pós-Graduação em Business intelligence, Big Data e Analytics - Ciência de Dados
-                            </p>
-                        </div>
-                        
-                    </div>
-                    <div class="col-md-6">
-
-                        <h3 class="cv-title">Profissional</h3>
-
-                        <div class="cv-item" data-anime="up">
-                            <h4>Administrador de Redes</h4>
-                            <h5>1995 - 2007</h5>
-                            <p><em>SESI/FIESC</em></p>
-                            <p>Administrador de redes no SESI/SC até 2001 e posteriormente na FIESC compondo a equipe integrada do sistema.
-                                Administrador de redes no SESI/SC até 2001 e posteriormente na FIESC compondo a equipe integrada do sistema.
-                                
-                            </p>
-                        </div>
-                        <div class="cv-item" data-anime="up">
-                            <h4>Administrador de Redes</h4>
-                            <h5>2008 - 2013</h5>
-                            <p><em>BISTEK Supermercados Ltda.</em></p>
-                            <p>Administrador de redes para 12 unidades no estado de SC e DevOps na matriz da empresa, gerenciando data center.
-                                Administrador de redes para 12 unidades no estado de SC e DevOps na matriz da empresa, gerenciando data center.
-                            </p>
-                        </div>
-                        <div class="cv-item" data-anime="up">
-                            <h4>Analista de Suporte FTTX</h4>
-                            <h5>2017 - 2018</h5>
-                            <p><em>CIANET</em></p>
-                            <p>Suporte avançado em redes FTTX e infraestrutura remoa dos clientes no Brasil</p>
-                        </div>
-                        <div class="cv-item" data-anime="up">
-                            <h4>Gestor de tráfego e Data Analyst</h4>
-                            <h5>2020 - atual</h5>
-                            <p><em>MK8 Tech</em></p>
-                            <p>Gestor de táfego pago nas diversas plataformas ADS e analista de dados.</p>
-                        </div>
-                                                
-                    </div>
-
-                </div>
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mt-3 mb-0">HTML</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 75%;">75%</div>
+              </div>
+              <p class="mt-3 mb-0">CSS</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 55%;">55%</div>
+              </div>
+              <p class="mt-3 mb-0">JavaScript</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 55%;">55%</div>
+              </div>
+              <p class="mt-3 mb-0">Python</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 60%;">60%</div>
+              </div>
+              <p class="mt-3 mb-0">Git</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 85%;">85%</div>
+              </div>
+              <p class="mt-3 mb-0">Deploy</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 85%;">85%</div>
+              </div>
+              <p class="mt-3 mb-0">Flask</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="45"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 45%;">45%</div>
+              </div>
             </div>
+            <div class="col-md-6">
+              <p class="mt-3 mb-0">Bootstrap</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 55%;">55%</div>
+              </div>
+              <p class="mt-3 mb-0">R</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 60%;">60%</div>
+              </div>
+              <p class="mt-3 mb-0">SQL</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 65%;">65%</div>
+              </div>
+              <p class="mt-3 mb-0">NoSQL</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="55"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 55%;">55%</div>
+              </div>
+              <p class="mt-3 mb-0">Power BI</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 50%;">50%</div>
+              </div>
+              <p class="mt-3 mb-0">Tableau</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="45"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 45%;">45%</div>
+              </div>
+              <p class="mt-3 mb-0">Wordpress</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 85%;">85%</div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <hr class="w-50 me-auto ms-auto" />
+          <div class="row">
+            <div class="col-md-6">
+              <p class="mt-3 mb-0">Trabalho em equipe</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 85%;">85%</div>
+              </div>
+              <p class="mt-3 mb-0">Proatividade</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 90%;">90%</div>
+              </div>
+              <p class="mt-3 mb-0">Orientação a detalhes</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 80%;">80%</div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="mt-3 mb-0">Comunicação</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 90%;">90%</div>
+              </div>
+              <p class="mt-3 mb-0">Emptia</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 85%;">85%</div>
+              </div>
+              <p class="mt-3 mb-0">Comprometimento</p>
+              <div
+                class="progress"
+                role="progressbar"
+                data-anime="left"
+                aria-label="Example with label"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 95%;">95%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section class="mt-5 cv" id="curriculo">
+        <div class="container pb-5">
+          <h2 class="pt-3 pb-4">Currículo</h2>
 
-        <section class="mt-5 section-bg" id="portfolio">
-            <div class="container pb-5 pt-5" data-anime="left">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="cv-title">Educação</h3>
 
-                <h2 class="pb-4">Portfólio</h2>
+              <div class="cv-item" data-anime="up">
+                <h4>Analise de Sistemas</h4>
+                <h5>1991 - 1993</h5>
+                <p>
+                  <em>ACEI - Associação Catarinense de Ensino a Informática</em>
+                </p>
+                <p>
+                  Tecnólogo em Análise de Sistemas, com carga horária de 1800
+                  horas. Tecnólogo em Análise de Sistemas, com carga horária de
+                  1800 horas Tecnólogo em Análise de Sistemas, com carga horária
+                  de 1800 horas Tecnólogo em Análise de Sistemas, com carga
+                  horária de 1800 horas
+                </p>
+              </div>
+              <div class="cv-item" data-anime="up">
+                <h4>CCNA</h4>
+                <h5>2000 - 2003</h5>
+                <p><em>Cisco Network Academy - SENAI</em></p>
+                <p>
+                  Especialização em Administração de Redes, com carga horária de
+                  850 horas. Especialização em Administração de Redes, com carga
+                  horária de 850 horas Especialização em Administração de Redes,
+                  com carga horária de 850 horas
+                </p>
+              </div>
+              <div class="cv-item" data-anime="up">
+                <h4>Gestão de Tecnologia da Informação</h4>
+                <h5>2019 - 2022</h5>
+                <p><em>UNICESUMAR - Gestão de TI</em></p>
+                <p>
+                  Graduação em Gestão de Tecnologia da Informação, com foco em
+                  projetos e metodologias ágeis com carga horária de 1800 horas.
+                  Graduação em Gestão de Tecnologia da Informação, com foco em
+                  projetos e metodologias ágeis com carga horária de 1800 horas.
+                </p>
+              </div>
 
-                <div id="carouselPortfolio" class="carousel carousel-dark slide">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselPortfolio" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="10000">
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                              <div class="card">
-                                <img src="../static/img/site1.png" class="card-img-top" alt="Mini site">
-                                <div class="card-body">
-                                  <h5 class="card-title">Mini site</h5>
-                                  <p class="card-text">Este foi um projeto fullstack criado com HTML, CSS, JavaScript, concluido em 
-                                    5 dias e trabalho, hospedado da Idolink, para construir um mini site de links para a MK8 Tech.</p>
-                                    <div class="d-flex justify-content-center"><a href="https://idolink.com/mk8tech" target="_blank" class="btn btn-outline-primary">
-                                        <i class="bi bi-link-45deg"></i></a>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="card">
-                                <img src="../static/img/site2.png" class="card-img-top" alt="Maverick Pro-touring">
-                                <div class="card-body">
-                                  <h5 class="card-title">Maverick Pro-touring</h5>
-                                  <p class="card-text">Este foi um projeto fullstack criado com HTML no CMS NicePage, concluido em apenas 
-                                    3 dias e para mostrar minha paixão por crros antigo, principalmente o Ford Maverick.</p>
-                                    <div class="d-flex justify-content-center"><a href="https://maverick.nicepage.io/" target="_blank" class="btn btn-outline-primary">
-                                        <i class="bi bi-link-45deg"></i></a>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="card">
-                                <img src="../static/img/site3.png" class="card-img-top" alt="Portfolio e blog">
-                                <div class="card-body">
-                                  <h5 class="card-title">Potifólio com Blog</h5>
-                                  <p class="card-text">Este foi um projeto fullstack criado com HTML, CSS, hospedado na Netlify, um portifólio com blog 
-                                    com desenvolvimento no vscode e commit para o GitHub, feito em 3 dias e trabalho.</p>
-                                    <div class="d-flex justify-content-center"><a href="https://marck.netlify.app/" target="_blank" class="btn btn-outline-primary">
-                                        <i class="bi bi-link-45deg"></i></a>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
+              <div class="cv-item" data-anime="up">
+                <h4>Data Science</h4>
+                <h5>2022 - atual</h5>
+                <p><em>Anhanguera - Pós-graduação</em></p>
+                <p>
+                  Pós-Graduação em Business intelligence, Big Data e Analytics -
+                  Ciência de Dados Pós-Graduação em Business intelligence, Big
+                  Data e Analytics - Ciência de Dados Pós-Graduação em Business
+                  intelligence, Big Data e Analytics - Ciência de Dados
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h3 class="cv-title">Profissional</h3>
+
+              <div class="cv-item" data-anime="up">
+                <h4>Administrador de Redes</h4>
+                <h5>1995 - 2007</h5>
+                <p><em>SESI/FIESC</em></p>
+                <p>
+                  Administrador de redes no SESI/SC até 2001 e posteriormente na
+                  FIESC compondo a equipe integrada do sistema. Administrador de
+                  redes no SESI/SC até 2001 e posteriormente na FIESC compondo a
+                  equipe integrada do sistema.
+                </p>
+              </div>
+              <div class="cv-item" data-anime="up">
+                <h4>Administrador de Redes</h4>
+                <h5>2008 - 2013</h5>
+                <p><em>BISTEK Supermercados Ltda.</em></p>
+                <p>
+                  Administrador de redes para 12 unidades no estado de SC e
+                  DevOps na matriz da empresa, gerenciando data center.
+                  Administrador de redes para 12 unidades no estado de SC e
+                  DevOps na matriz da empresa, gerenciando data center.
+                </p>
+              </div>
+              <div class="cv-item" data-anime="up">
+                <h4>Analista de Suporte FTTX</h4>
+                <h5>2017 - 2018</h5>
+                <p><em>CIANET</em></p>
+                <p>
+                  Suporte avançado em redes FTTX e infraestrutura remoa dos
+                  clientes no Brasil
+                </p>
+              </div>
+              <div class="cv-item" data-anime="up">
+                <h4>Gestor de tráfego e Data Analyst</h4>
+                <h5>2020 - atual</h5>
+                <p><em>MK8 Tech</em></p>
+                <p>
+                  Gestor de táfego pago nas diversas plataformas ADS e analista
+                  de dados.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-5 section-bg" id="portfolio">
+        <div class="container pb-5 pt-5" data-anime="left">
+          <h2 class="pb-4">Portfólio</h2>
+
+          <div id="carouselPortfolio" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselPortfolio"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselPortfolio"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="../static/img/site1.png"
+                        class="card-img-top"
+                        alt="Mini site"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Mini site</h5>
+                        <p class="card-text">
+                          Este foi um projeto fullstack criado com HTML, CSS,
+                          JavaScript, concluido em 5 dias e trabalho, hospedado
+                          da Idolink, para construir um mini site de links para
+                          a MK8 Tech.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="https://idolink.com/mk8tech"
+                            target="_blank"
+                            class="btn btn-outline-primary"
+                          >
+                            <i class="bi bi-link-45deg"></i>
+                          </a>
                         </div>
                       </div>
-                      <div class="carousel-item" data-bs-interval="2000">
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                              <div class="card">
-                                <img src="../static/img/site4.png" class="card-img-top" alt="Mini site Terapias">
-                                <div class="card-body">
-                                  <h5 class="card-title">Mini site Terapias</h5>
-                                  <p class="card-text">Este foi um projeto fullstack criado com HTML, CSS, JavaScript, concluido em 
-                                    5 dias e trabalho, hospedado da Idolink, para construir um mini site de links para a Tatiana Aguiar Terapias</p>
-                                    <div class="d-flex justify-content-center"><a href="https://idolink.com/tatianaaguiarterapias" target="_blank" class="btn btn-outline-primary">
-                                        <i class="bi bi-link-45deg"></i></a>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="card">
-                                <img src="../static/img/site5.png" class="card-img-top" alt="100 queda">
-                                <div class="card-body">
-                                  <h5 class="card-title">Landingpage 100 Queda</h5>
-                                  <p class="card-text">Este foi um projeto fullstack criado com HTML, CSS, hospedado na Netlify, uma landingpage para  
-                                    venda de encapsulado, com desenvolvimento no vscode e commit para o GitHub.</p>
-                                    <div class="d-flex justify-content-center"><a href="https://importcaps.netlify.app/100queda/" target="_blank" class="btn btn-outline-primary">
-                                        <i class="bi bi-link-45deg"></i></a>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="card">
-                                <img src="../static/img/site6.png" class="card-img-top" alt="Reveravit">
-                                <div class="card-body">
-                                  <h5 class="card-title">Landingpage Reveravit</h5>
-                                  <p class="card-text">Este foi um projeto fullstack criado com HTML, CSS, hospedado na Netlify, uma landingpage para  
-                                    venda de encapsulado, com desenvolvimento no vscode e commit para o GitHub.</p>
-                                    <div class="d-flex justify-content-center"><a href="https://importcaps.netlify.app/reveravit/" target="_blank" class="btn btn-outline-primary">
-                                        <i class="bi bi-link-45deg"></i></a>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="../static/img/site2.png"
+                        class="card-img-top"
+                        alt="Maverick Pro-touring"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Maverick Pro-touring</h5>
+                        <p class="card-text">
+                          Este foi um projeto fullstack criado com HTML no CMS
+                          NicePage, concluido em apenas 3 dias e para mostrar
+                          minha paixão por crros antigo, principalmente o Ford
+                          Maverick.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="https://maverick.nicepage.io/"
+                            target="_blank"
+                            class="btn btn-outline-primary"
+                          >
+                            <i class="bi bi-link-45deg"></i>
+                          </a>
                         </div>
                       </div>
-                     
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPortfolio" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="../static/img/site3.png"
+                        class="card-img-top"
+                        alt="Portfolio e blog"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Potifólio com Blog</h5>
+                        <p class="card-text">
+                          Este foi um projeto fullstack criado com HTML, CSS,
+                          hospedado na Netlify, um portifólio com blog com
+                          desenvolvimento no vscode e commit para o GitHub,
+                          feito em 3 dias e trabalho.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="https://marck.netlify.app/"
+                            target="_blank"
+                            class="btn btn-outline-primary"
+                          >
+                            <i class="bi bi-link-45deg"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="../static/img/site4.png"
+                        class="card-img-top"
+                        alt="Mini site Terapias"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Mini site Terapias</h5>
+                        <p class="card-text">
+                          Este foi um projeto fullstack criado com HTML, CSS,
+                          JavaScript, concluido em 5 dias e trabalho, hospedado
+                          da Idolink, para construir um mini site de links para
+                          a Tatiana Aguiar Terapias
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="https://idolink.com/tatianaaguiarterapias"
+                            target="_blank"
+                            class="btn btn-outline-primary"
+                          >
+                            <i class="bi bi-link-45deg"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="../static/img/site5.png"
+                        class="card-img-top"
+                        alt="100 queda"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Landingpage 100 Queda</h5>
+                        <p class="card-text">
+                          Este foi um projeto fullstack criado com HTML, CSS,
+                          hospedado na Netlify, uma landingpage para venda de
+                          encapsulado, com desenvolvimento no vscode e commit
+                          para o GitHub.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="https://importcaps.netlify.app/100queda/"
+                            target="_blank"
+                            class="btn btn-outline-primary"
+                          >
+                            <i class="bi bi-link-45deg"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img
+                        src="../static/img/site6.png"
+                        class="card-img-top"
+                        alt="Reveravit"
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title">Landingpage Reveravit</h5>
+                        <p class="card-text">
+                          Este foi um projeto fullstack criado com HTML, CSS,
+                          hospedado na Netlify, uma landingpage para venda de
+                          encapsulado, com desenvolvimento no vscode e commit
+                          para o GitHub.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                          <a
+                            href="https://importcaps.netlify.app/reveravit/"
+                            target="_blank"
+                            class="btn btn-outline-primary"
+                          >
+                            <i class="bi bi-link-45deg"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselPortfolio"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselPortfolio"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="pt-5 pb-5" id="contato">
+        <div class="container mb-5">
+          <h2 class="pt-3 pb-3">Contato</h2>
+
+          <div class="row">
+            <div class="col-md-5">
+              <div class="card p-5 shadow border-0" data-anime="up">
+                <div class="email">
+                  <h4>
+                    <i class="bi bi-envelope"></i>
+                    Email:
+                  </h4>
+                  <p>marcks@gmail.com</p>
+                </div>
+                <div class="endereco">
+                  <h4>
+                    <i class="bi bi-geo-alt"></i>
+                    Localização:
+                  </h4>
+                  <p>Florianópolis, SC</p>
+                </div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.493761421433!2d-48.53472173428219!3d-27.609220453894068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739b417665a15%3A0x4c6b5d61752da7de!2sR.%20Jos%C3%A9%20Brognoli%2C%20117%20-%20Saco%20dos%20Lim%C3%B5es%2C%20Florian%C3%B3polis%20-%20SC%2C%2088045-520!5e0!3m2!1spt-BR!2sbr!4v1676062781267!5m2!1spt-BR!2sbr"
+                  width="400"
+                  height="300"
+                  style="border: 0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="w-100"
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-md-7 mt-5 mt-md-0">
+              <div class="card p-5 h-100 shadow border-0" data-anime="left">
+                <form class="row g-3" action="/send" method="POST">
+                  <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nome"
+                      name="nome"
+                      placeholder="Digite seu nome"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Digite seu email"
+                      required
+                    />
                   </div>
 
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem:</label>
+                    <textarea
+                      type="text"
+                      class="form-control"
+                      id="mensagem"
+                      name="mensagem"
+                      rows="10"
+                      placeholder="Digite sua mensagem"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="col-12 d-flex justify-content-center mt-4">
+                    <button
+                      id="btn-enviar"
+                      type="submit"
+                      class="btn btn-outline-primary"
+                    >
+                      Enviar mensagem
+                    </button>
+
+                    <button
+                      id="btn-enviar-loader"
+                      class="btn btn-primary"
+                      type="button"
+                      disabled
+                    >
+                      <span
+                        class="spinner-grow spinner-grow-sm"
+                        role="status"
+                        aria-hidden="true"
+                      ></span>
+                      Enviando...
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+      {% with messages = get_flashed_messages() %} 
+      {% if messages %}
+      {% for message in messages %}
+      <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="bi bi-check-circle-fill"></i> {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      {% endfor %}
+      {% endif %} 
+      {% endwith %}
 
-        </section>
-        <section class="pt-5 pb-5" id="contato">
-            <div class="container mb-5">
-                <h2 class="pt-3 pb-3">Contato</h2>
 
-                <div class="row">
-
-                    <div class="col-md-5">
-                        <div class="card p-5 shadow border-0" data-anime="up">
-                            <div class="email">
-                                <h4><i class="bi bi-envelope"></i> Email:</h4>
-                                <p>marcks@gmail.com</p>
-                            </div>
-                            <div class="endereco">
-                                <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
-                                <p>Florianópolis, SC</p>
-                            </div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.493761421433!2d-48.53472173428219!3d-27.609220453894068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739b417665a15%3A0x4c6b5d61752da7de!2sR.%20Jos%C3%A9%20Brognoli%2C%20117%20-%20Saco%20dos%20Lim%C3%B5es%2C%20Florian%C3%B3polis%20-%20SC%2C%2088045-520!5e0!3m2!1spt-BR!2sbr!4v1676062781267!5m2!1spt-BR!2sbr" 
-                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade" class="w-100"></iframe>
-                        </div>
-                    </div>
-                    <div class="col-md-7 mt-5 mt-md-0">
-                        <div class="card p-5 h-100 shadow border-0" data-anime="left">
-                            <form class="row g-3" action="/send" method="POST">
-                                <div class="col-md-6">
-                                  <label for="nome" class="form-label">Nome:</label>
-                                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
-                                </div>
-                                <div class="col-md-6">
-                                  <label for="email" class="form-label">Email:</label>
-                                  <input type="text" class="form-control" id="email" name="email" placeholder="Digite seu email">
-                                </div>
-                                
-                                <div class="col-12">
-                                  <label for="mensagem" class="form-label">Mensagem:</label>
-                                  <textarea type="text" class="form-control" id="mensagem" name="mensagem" rows= "10" placeholder="Digite sua mensagem"></textarea>
-                                </div>
-                                                                
-                                <div class="col-12 d-flex justify-content-center mt-4">
-                                  <button type="submit" class="btn btn-outline-primary">Enviar mensagem</button>
-                                </div>
-                              </form>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </section>
     </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                &copy; Copyright <strong>MK8 Tech</strong>
+            </div>
+
+        </div>
+
+    </footer>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>
-</body>
+  </body>
 </html>
